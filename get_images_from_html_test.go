@@ -6,24 +6,67 @@ import (
 	"testing"
 )
 
-func TestGetImagesFromHTMLRelative(t *testing.T) {
+func TestGetImagesFromHTMLAbsolute(t *testing.T) {
 	inputURL := "https://crawler-test.com"
-	inputBody := `<html><body><img src="/logo.png" alt="Logo">
-<img src="/tnaums.png" alt="Tnaums">
-</body></html>`
+	inputBody := `<html><body><img src="https://crawler-test.com/logo.png" alt="Logo"></body></html>`
 
-	baseURL, err := url.Parse(inputURL)
+	parsedURL, err := url.Parse(inputURL)
 	if err != nil {
-		t.Errorf("couldn't parse input URL: %v", err)
-		return
+		t.Fatalf("unexpected error: %v", err)
 	}
 
-	actual, err := getImagesFromHTML(inputBody, baseURL)
+	actual, err := getImagesFromHTML(inputBody, parsedURL)
 	if err != nil {
 		t.Fatalf("unexpected error: %v", err)
 	}
 
 	expected := []string{"https://crawler-test.com/logo.png"}
+	if !reflect.DeepEqual(actual, expected) {
+		t.Errorf("expected %v, got %v", expected, actual)
+	}
+}
+
+func TestGetImagesFromHTMLRelative(t *testing.T) {
+	inputURL := "https://crawler-test.com"
+	inputBody := `<html><body><img src="/logo.png" alt="Logo"></body></html>`
+
+	parsedURL, err := url.Parse(inputURL)
+	if err != nil {
+		t.Fatalf("unexpected error: %v", err)
+	}
+
+	actual, err := getImagesFromHTML(inputBody, parsedURL)
+	if err != nil {
+		t.Fatalf("unexpected error: %v", err)
+	}
+
+	expected := []string{"https://crawler-test.com/logo.png"}
+	if !reflect.DeepEqual(actual, expected) {
+		t.Errorf("expected %v, got %v", expected, actual)
+	}
+}
+
+func TestGetImagesFromHTMLMultiple(t *testing.T) {
+	inputURL := "https://crawler-test.com"
+	inputBody := `<html><body>
+		<img src="/logo.png" alt="Logo">
+		<img src="https://cdn.boot.dev/banner.jpg">
+	</body></html>`
+
+	parsedURL, err := url.Parse(inputURL)
+	if err != nil {
+		t.Fatalf("unexpected error: %v", err)
+	}
+
+	actual, err := getImagesFromHTML(inputBody, parsedURL)
+	if err != nil {
+		t.Fatalf("unexpected error: %v", err)
+	}
+
+	expected := []string{
+		"https://crawler-test.com/logo.png",
+		"https://cdn.boot.dev/banner.jpg",
+	}
 	if !reflect.DeepEqual(actual, expected) {
 		t.Errorf("expected %v, got %v", expected, actual)
 	}

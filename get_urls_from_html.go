@@ -9,15 +9,31 @@ import (
 )
 
 func getURLsFromHTML(htmlBody string, baseURL *url.URL) ([]string, error) {
-	extractedURLs := make([]string, 0)
 	doc, err := goquery.NewDocumentFromReader(strings.NewReader(htmlBody))
 	if err != nil {
-		return extractedURLs, err
+		return nil, fmt.Errorf("couldn't parse HTML: %w", err)
 	}
 
-	u := doc.Find("a").Text()
-	fmt.Println(u)
-	fmt.Println("Yo!")
+	var urls []string
+	doc.Find("a[href]").Each(func(_ int, s *goquery.Selection) {
+		href, ok := s.Attr("href")
+		if !ok {
+			return
+		}
+		href = strings.TrimSpace(href)
+		if href == "" {
+			return
+		}
 
-	return extractedURLs, nil
+		u, err := url.Parse(href)
+		if err != nil {
+			fmt.Printf("couldn't parse href %q: %v\n", href, err)
+			return
+		}
+
+		resolved := baseURL.ResolveReference(u)
+		urls = append(urls, resolved.String())
+	})
+
+	return urls, nil
 }

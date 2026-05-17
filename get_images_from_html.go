@@ -9,18 +9,27 @@ import (
 )
 
 func getImagesFromHTML(htmlBody string, baseURL *url.URL) ([]string, error) {
-	extractedImages := make([]string, 0)
 	doc, err := goquery.NewDocumentFromReader(strings.NewReader(htmlBody))
 	if err != nil {
-		return extractedImages, err
+		return nil, fmt.Errorf("couldn't parse HTML: %w", err)
 	}
 
-	images := doc.Find("img")
-	photograph, _ := images.Attr("src")
-	fmt.Printf("Type of images: %T\n", images)
-	fmt.Printf("Type of photograph: %T\n", photograph)
-	fmt.Println(photograph)
-	fmt.Println("Yo!")
+	var imageURLs []string
+	doc.Find("img").Each(func(_ int, s *goquery.Selection) {
+		src, ok := s.Attr("src")
+		if !ok || strings.TrimSpace(src) == "" {
+			return
+		}
 
-	return extractedImages, nil
+		u, err := url.Parse(src)
+		if err != nil {
+			fmt.Printf("couldn't parse src %q: %v\n", src, err)
+			return
+		}
+
+		absolute := baseURL.ResolveReference(u)
+		imageURLs = append(imageURLs, absolute.String())
+	})
+
+	return imageURLs, nil
 }
