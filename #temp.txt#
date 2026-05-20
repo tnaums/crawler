@@ -1,7 +1,0 @@
-extract_page_data_test.go:28:
-
-expected {URL:https://crawler-test.com Heading:Test Title
-FirstParagraph:This is the first
-paragraph. OutgoingLinks:[https://crawler-test.com/link1]
-ImageURLs:[https://crawler-test.com/image1.jpg]},
-got {URL:crawler-test.com Heading:Test Title FirstParagraph:This is the first paragraph. OutgoingLinks:[https://crawler-test.com/link1] ImageURLs:[https://crawler-test.com/image1.jpg]}
