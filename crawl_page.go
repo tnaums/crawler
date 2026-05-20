@@ -17,14 +17,15 @@ func (cfg *config) crawlPage(rawCurrentURL string) {
 	}
 
 	normalized, err := normalizeURL(rawCurrentURL)
-	if err != nil { return }
-
-	_, ok := cfg.pages[normalized]
-	if ok {
-		cfg.pages[normalized]++
+	if err != nil {
 		return
 	}
-	cfg.pages[normalized] = 1
+
+	isFirst := cfg.addPageVisit(normalized)
+
+	if isFirst == false {
+		return
+	}
 
 	pageHTML, err := getHTML(rawCurrentURL)
 	if err != nil {
@@ -42,5 +43,15 @@ func (cfg *config) crawlPage(rawCurrentURL string) {
 		cfg.crawlPage(u)
 	}
 
+}
 
+func (cfg *config) addPageVisit(normalizedURL string) (isFirst bool) {
+	_, ok := cfg.pages[normalizedURL]
+	if ok {
+		cfg.pages[normalizedURL]++
+		return false
+	}
+	cfg.pages[normalizedURL] = 1
+
+	return true
 }
