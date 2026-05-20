@@ -2,10 +2,40 @@ package main
 
 import (
 	"fmt"
+	"net/url"
 	"os"
+	"sync"
 )
 
-var pages = make(map[string]int)
+//var pages = make(map[string]int)
+
+type config struct {
+	pages              map[string]int
+	baseURL            *url.URL
+	mu                 *sync.Mutex
+	concurrencyControl chan struct{}
+	wg                 *sync.WaitGroup
+}
+
+func NewConfig(baseURL string) config {
+	pages := make(map[string]int)
+
+	parsedBaseURL, err := url.Parse(baseURL)
+	if err != nil {
+		return config{}
+	}
+
+	var mutex sync.Mutex
+	var sync sync.WaitGroup
+
+	return config{
+		pages:              pages,
+		baseURL:            parsedBaseURL,
+		mu:                 &mutex,
+		concurrencyControl: make(chan struct{}),
+		wg:                 &sync,
+	}
+}
 
 func main() {
 	if len(os.Args) < 2 {
@@ -18,12 +48,15 @@ func main() {
 	}
 
 	baseURL := os.Args[1]
+
+	crawlConfig := NewConfig(baseURL)
+
 	fmt.Printf("starting crawl of: %s\n", baseURL)
-	
-	crawlPage(baseURL, baseURL, pages)
+
+	crawlConfig.crawlPage(baseURL)
 
 	fmt.Println("Done. Printing map:")
-	for k, v := range pages {
+	for k, v := range crawlConfig.pages {
 		fmt.Printf("key: %s, value: %d\n", k, v)
 	}
 }

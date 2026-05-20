@@ -5,30 +5,26 @@ import (
 	"net/url"
 )
 
-func crawlPage(rawBaseURL, rawCurrentURL string, pages map[string]int) {
-	parsedBaseURL, err := url.Parse(rawBaseURL)
-	if err != nil {
-		return
-	}
-
+// func crawlPage(rawBaseURL, rawCurrentURL string, pages map[string]int)
+func (cfg *config) crawlPage(rawCurrentURL string) {
 	parsedCurrentURL, err := url.Parse(rawCurrentURL)
 	if err != nil {
 		return
 	}
 
-	if parsedBaseURL.Hostname() != parsedCurrentURL.Hostname() {
+	if cfg.baseURL.Hostname() != parsedCurrentURL.Hostname() {
 		return
 	}
 
 	normalized, err := normalizeURL(rawCurrentURL)
 	if err != nil { return }
 
-	_, ok := pages[normalized]
+	_, ok := cfg.pages[normalized]
 	if ok {
-		pages[normalized]++
+		cfg.pages[normalized]++
 		return
 	}
-	pages[normalized] = 1
+	cfg.pages[normalized] = 1
 
 	pageHTML, err := getHTML(rawCurrentURL)
 	if err != nil {
@@ -36,14 +32,14 @@ func crawlPage(rawBaseURL, rawCurrentURL string, pages map[string]int) {
 	}
 	fmt.Println(pageHTML)
 
-	allURLs, err := getURLsFromHTML(pageHTML, parsedBaseURL)
+	allURLs, err := getURLsFromHTML(pageHTML, cfg.baseURL)
 	if err != nil {
 		return
 	}
 	fmt.Println("Looping...")
 	for _, u := range allURLs {
 		fmt.Println(u)
-		crawlPage(rawBaseURL, u, pages)
+		cfg.crawlPage(u)
 	}
 
 
