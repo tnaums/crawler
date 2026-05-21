@@ -15,9 +15,10 @@ type config struct {
 	mu                 *sync.Mutex
 	concurrencyControl chan struct{}
 	wg                 *sync.WaitGroup
+	maxPages           int
 }
 
-func NewConfig(baseURL string) config {
+func NewConfig(baseURL string, maxConcurrency int, maxPages int) config {
 	pages := make(map[string]PageData)
 
 	parsedBaseURL, err := url.Parse(baseURL)
@@ -32,24 +33,34 @@ func NewConfig(baseURL string) config {
 		pages:              pages,
 		baseURL:            parsedBaseURL,
 		mu:                 &mutex,
-		concurrencyControl: make(chan struct{}, 5),
+		concurrencyControl: make(chan struct{}, maxPages),
 		wg:                 &sync,
+		maxPages:           maxPages,
 	}
 }
 
 func main() {
-	if len(os.Args) < 2 {
-		fmt.Println("no website provided")
-		os.Exit(1)
-	}
-	if len(os.Args) > 2 {
-		fmt.Println("too many arguments provided")
+	var maxConcurrency int
+	var maxPages int
+
+	if len(os.Args) != 4 {
+		fmt.Println("Usage: go run . <url> <maxConcurrency> <maxPages>")
 		os.Exit(1)
 	}
 
 	baseURL := os.Args[1]
+	if _, err := fmt.Sscanf(os.Args[2], "%d", &maxConcurrency); err != nil {
+		fmt.Println("error", err)
+		os.Exit(1)
+	}
+	if _, err := fmt.Sscanf(os.Args[3], "%d", &maxPages); err != nil {
+		fmt.Println("error", err)
+		os.Exit(1)
+	}
 
-	crawlConfig := NewConfig(baseURL)
+	fmt.Printf("type of maxConcurrency: %T\n", maxConcurrency)
+	fmt.Printf("type of maxPages: %T\n", maxPages)
+	crawlConfig := NewConfig(baseURL, maxConcurrency, maxPages)
 
 	fmt.Printf("starting crawl of: %s\n", baseURL)
 

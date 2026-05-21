@@ -1,17 +1,25 @@
 package main
 
 import (
-	//"fmt"
+	"fmt"
 	"net/url"
 )
 
 // func crawlPage(rawBaseURL, rawCurrentURL string, pages map[string]int)
 func (cfg *config) crawlPage(rawCurrentURL string) {
+
 	cfg.concurrencyControl <- struct{}{}
 	defer func() {
 		<-cfg.concurrencyControl
 		cfg.wg.Done()
 	}()	
+
+	cfg.mu.Lock()
+	if len(cfg.pages) >= cfg.maxPages {
+		cfg.mu.Unlock()
+		return
+	}
+	cfg.mu.Unlock()
 
 	parsedCurrentURL, err := url.Parse(rawCurrentURL)
 	if err != nil {
@@ -32,7 +40,7 @@ func (cfg *config) crawlPage(rawCurrentURL string) {
 	if ! isFirst {
 		return
 	}
-
+	fmt.Printf("Crawling %s...\n", rawCurrentURL)	
 	pageHTML, err := getHTML(rawCurrentURL)
 	if err != nil {
 		return
