@@ -1,0 +1,420 @@
+[
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/",
+    "heading": "Fantasy Ecommerce Catalog",
+    "first_paragraph": "Browse fantasy product listings, category pages, detail pages, prices, rarity, stock labels, and specifications.FAN-1001RareWeapons \u003e Swords \u003e Longswords\n                $184.00\n                $229.00\n              In StockFAN-1002EpicWeapons \u003e Swords \u003e Longswords\n                $236.00\n                $289.00\n              Only 3 left in stock - order soonFAN-1003UncommonWeapons \u003e Swords \u003e Longswords\n                $132.00\n                $158.00\n              In StockFAN-1004CommonWeapons \u003e Swords \u003e Longswords\n                $88.00\n                $109.00\n              In StockFAN-1005RareWeapons \u003e Swords \u003e Longswords\n                $167.00\n                $204.00\n              Out of StockFAN-1006LegendaryWeapons \u003e Swords \u003e Longswords\n                $412.00\n                $490.00\n              Only 3 left in stock - order soonFAN-1101CommonWeapons \u003e Staves \u003e Arcane Staves\n                $72.00\n                $89.00\n              In StockFAN-1102RareWeapons \u003e Staves \u003e Arcane Staves\n                $168.00\n                $205.00\n              In StockFAN-1103EpicWeapons \u003e Staves \u003e Arcane Staves\n                $226.00\n                $274.00\n              Only 3 left in stock - order soonFAN-1104UncommonWeapons \u003e Staves \u003e Arcane Staves\n                $124.00\n                $149.00\n              In StockFAN-1105RareWeapons \u003e Staves \u003e Arcane Staves\n                $176.00\n                $214.00\n              Out of StockFAN-1106LegendaryWeapons \u003e Staves \u003e Arcane Staves\n                $398.00\n                $468.00\n              Only 3 left in stock - order soonFAN-1201CommonArmor \u003e Heavy Armor \u003e Chestplates\n                $118.00\n                $144.00\n              In StockFAN-1202UncommonArmor \u003e Heavy Armor \u003e Chestplates\n                $164.00\n                $199.00\n              In StockFAN-1203RareArmor \u003e Heavy Armor \u003e Chestplates\n                $224.00\n                $269.00\n              In StockFAN-1204EpicArmor \u003e Heavy Armor \u003e Chestplates\n                $276.00\n                $332.00\n              Only 3 left in stock - order soonFAN-1205LegendaryArmor \u003e Heavy Armor \u003e Chestplates\n                $441.00\n                $520.00\n              Only 3 left in stock - order soonFAN-1206RareArmor \u003e Heavy Armor \u003e Chestplates\n                $208.00\n                $249.00\n              Out of StockFAN-1301CommonArmor \u003e Light Armor \u003e Cloaks\n                $54.00\n                $68.00\n              In StockFAN-1302UncommonArmor \u003e Light Armor \u003e Cloaks\n                $89.00\n                $109.00\n              In StockFAN-1303RareArmor \u003e Light Armor \u003e Cloaks\n                $138.00\n                $169.00\n              Only 3 left in stock - order soonFAN-1304EpicArmor \u003e Light Armor \u003e Cloaks\n                $204.00\n                $246.00\n              Out of StockFAN-1305CommonArmor \u003e Light Armor \u003e Cloaks\n                $47.00\n                $59.00\n              In StockFAN-1306RareArmor \u003e Light Armor \u003e Cloaks\n                $149.00\n                $181.00\n              In StockOpen a collection to explore related products in one place.Open all categories6 items in this collection.6 items in this collection.6 items in this collection.6 items in this collection.6 items in this collection.6 items in this collection.",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/ashenfang-longsword-fan-1001/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/kingshade-bastard-sword-fan-1002/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/moonlit-tournament-blade-fan-1003/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/garrison-oathblade-fan-1004/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/verdant-duelist-saber-fan-1005/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/sunspire-relic-blade-fan-1006/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/starwell-apprentice-staff-fan-1101/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/stormglass-channeling-staff-fan-1102/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/mirelight-hex-staff-fan-1103/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/dawnscribe-rune-staff-fan-1104/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/frostvein-scepter-staff-fan-1105/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/astral-observatory-grand-staff-fan-1106/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/bastion-pike-chestplate-fan-1201/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/lionwake-tournament-cuirass-fan-1202/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/stonewarden-bulwark-plate-fan-1203/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/dreadmarsh-graveguard-harness-fan-1204/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/sunvault-defender-plate-fan-1205/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/rookwatch-siege-plate-fan-1206/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/whisperleaf-scout-cloak-fan-1301/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/nightmarket-smuggler-cape-fan-1302/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/starling-court-mantle-fan-1303/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/gloomfen-veilcloak-fan-1304/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/sunset-falcon-travel-cloak-fan-1305/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/mistglass-infiltrator-wrap-fan-1306/",
+      "https://learnwebscraping.dev/practice/ecommerce/page/2/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/arcane-staves/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/chestplates/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/cloaks/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/enchanted-rings/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/longswords/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/mana-potions/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": null
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/categories/",
+    "heading": "Fantasy Ecommerce Categories",
+    "first_paragraph": "Browse 6 categories and 36 product pages across the fantasy catalog.6 items in this collection.6 items in this collection.6 items in this collection.6 items in this collection.6 items in this collection.6 items in this collection.",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/arcane-staves/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/chestplates/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/cloaks/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/enchanted-rings/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/longswords/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/mana-potions/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": null
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/categories/arcane-staves/",
+    "heading": "Arcane Staves",
+    "first_paragraph": "Browse the Arcane Staves collection with product pages, prices, rarity labels, and stock information.Category: Arcane StavesProducts: 6Use this page to discover products within a single category.FAN-1101Common$72.00In StockFAN-1102Rare$168.00In StockFAN-1103Epic$226.00Only 3 left in stock - order soonFAN-1104Uncommon$124.00In StockFAN-1105Rare$176.00Out of StockFAN-1106Legendary$398.00Only 3 left in stock - order soon",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/starwell-apprentice-staff-fan-1101/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/stormglass-channeling-staff-fan-1102/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/mirelight-hex-staff-fan-1103/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/dawnscribe-rune-staff-fan-1104/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/frostvein-scepter-staff-fan-1105/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/astral-observatory-grand-staff-fan-1106/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": null
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/categories/chestplates/",
+    "heading": "Chestplates",
+    "first_paragraph": "Browse the Chestplates collection with product pages, prices, rarity labels, and stock information.Category: ChestplatesProducts: 6Use this page to discover products within a single category.FAN-1201Common$118.00In StockFAN-1202Uncommon$164.00In StockFAN-1203Rare$224.00In StockFAN-1204Epic$276.00Only 3 left in stock - order soonFAN-1205Legendary$441.00Only 3 left in stock - order soonFAN-1206Rare$208.00Out of Stock",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/bastion-pike-chestplate-fan-1201/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/lionwake-tournament-cuirass-fan-1202/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/stonewarden-bulwark-plate-fan-1203/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/dreadmarsh-graveguard-harness-fan-1204/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/sunvault-defender-plate-fan-1205/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/rookwatch-siege-plate-fan-1206/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": null
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/categories/cloaks/",
+    "heading": "Cloaks",
+    "first_paragraph": "Browse the Cloaks collection with product pages, prices, rarity labels, and stock information.Category: CloaksProducts: 6Use this page to discover products within a single category.FAN-1301Common$54.00In StockFAN-1302Uncommon$89.00In StockFAN-1303Rare$138.00Only 3 left in stock - order soonFAN-1304Epic$204.00Out of StockFAN-1305Common$47.00In StockFAN-1306Rare$149.00In Stock",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/whisperleaf-scout-cloak-fan-1301/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/nightmarket-smuggler-cape-fan-1302/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/starling-court-mantle-fan-1303/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/gloomfen-veilcloak-fan-1304/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/sunset-falcon-travel-cloak-fan-1305/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/mistglass-infiltrator-wrap-fan-1306/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": null
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/categories/enchanted-rings/",
+    "heading": "Enchanted Rings",
+    "first_paragraph": "Browse the Enchanted Rings collection with product pages, prices, rarity labels, and stock information.Category: Enchanted RingsProducts: 6Use this page to discover products within a single category.FAN-1401Common$34.00In StockFAN-1402Uncommon$72.00In StockFAN-1403Rare$121.00Only 3 left in stock - order soonFAN-1404Epic$188.00In StockFAN-1405Rare$144.00Out of StockFAN-1406Uncommon$67.00In Stock",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/copper-finch-ring-fan-1401/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/sagefire-band-fan-1402/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/moonpool-reflection-ring-fan-1403/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/gravebloom-signet-fan-1404/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/oathkeeper-seal-ring-fan-1405/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/foxstep-gambler-ring-fan-1406/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": null
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/categories/longswords/",
+    "heading": "Longswords",
+    "first_paragraph": "Browse the Longswords collection with product pages, prices, rarity labels, and stock information.Category: LongswordsProducts: 6Use this page to discover products within a single category.FAN-1001Rare$184.00In StockFAN-1002Epic$236.00Only 3 left in stock - order soonFAN-1003Uncommon$132.00In StockFAN-1004Common$88.00In StockFAN-1005Rare$167.00Out of StockFAN-1006Legendary$412.00Only 3 left in stock - order soon",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/ashenfang-longsword-fan-1001/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/kingshade-bastard-sword-fan-1002/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/moonlit-tournament-blade-fan-1003/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/garrison-oathblade-fan-1004/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/verdant-duelist-saber-fan-1005/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/sunspire-relic-blade-fan-1006/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": null
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/categories/mana-potions/",
+    "heading": "Mana Potions",
+    "first_paragraph": "Browse the Mana Potions collection with product pages, prices, rarity labels, and stock information.Category: Mana PotionsProducts: 6Use this page to discover products within a single category.FAN-1501Common$12.00In StockFAN-1502Uncommon$24.00In StockFAN-1503Rare$41.00Only 3 left in stock - order soonFAN-1504Epic$66.00In StockFAN-1505Rare$48.00Out of StockFAN-1506Legendary$118.00Only 3 left in stock - order soon",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/novice-mana-tonic-fan-1501/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/battle-mage-reserve-draught-fan-1502/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/moonwell-distillate-fan-1503/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/voidglass-ether-phial-fan-1504/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/sunmint-elixir-fan-1505/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/grand-archivist-reserve-fan-1506/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": null
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/page/2/",
+    "heading": "Fantasy Ecommerce Catalog",
+    "first_paragraph": "Browse fantasy product listings, category pages, detail pages, prices, rarity, stock labels, and specifications.FAN-1401CommonAccessories \u003e Rings \u003e Enchanted Rings\n                $34.00\n                $42.00\n              In StockFAN-1402UncommonAccessories \u003e Rings \u003e Enchanted Rings\n                $72.00\n                $88.00\n              In StockFAN-1403RareAccessories \u003e Rings \u003e Enchanted Rings\n                $121.00\n                $146.00\n              Only 3 left in stock - order soonFAN-1404EpicAccessories \u003e Rings \u003e Enchanted Rings\n                $188.00\n                $229.00\n              In StockFAN-1405RareAccessories \u003e Rings \u003e Enchanted Rings\n                $144.00\n                $176.00\n              Out of StockFAN-1406UncommonAccessories \u003e Rings \u003e Enchanted Rings\n                $67.00\n                $82.00\n              In StockFAN-1501CommonConsumables \u003e Potions \u003e Mana Potions\n                $12.00\n                $15.00\n              In StockFAN-1502UncommonConsumables \u003e Potions \u003e Mana Potions\n                $24.00\n                $29.00\n              In StockFAN-1503RareConsumables \u003e Potions \u003e Mana Potions\n                $41.00\n                $49.00\n              Only 3 left in stock - order soonFAN-1504EpicConsumables \u003e Potions \u003e Mana Potions\n                $66.00\n                $79.00\n              In StockFAN-1505RareConsumables \u003e Potions \u003e Mana Potions\n                $48.00\n                $57.00\n              Out of StockFAN-1506LegendaryConsumables \u003e Potions \u003e Mana Potions\n                $118.00\n                $139.00\n              Only 3 left in stock - order soonOpen a collection to explore related products in one place.Open all categories6 items in this collection.6 items in this collection.6 items in this collection.6 items in this collection.6 items in this collection.6 items in this collection.",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/copper-finch-ring-fan-1401/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/sagefire-band-fan-1402/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/moonpool-reflection-ring-fan-1403/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/gravebloom-signet-fan-1404/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/oathkeeper-seal-ring-fan-1405/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/foxstep-gambler-ring-fan-1406/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/novice-mana-tonic-fan-1501/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/battle-mage-reserve-draught-fan-1502/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/moonwell-distillate-fan-1503/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/voidglass-ether-phial-fan-1504/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/sunmint-elixir-fan-1505/",
+      "https://learnwebscraping.dev/practice/ecommerce/products/grand-archivist-reserve-fan-1506/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/arcane-staves/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/chestplates/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/cloaks/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/enchanted-rings/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/longswords/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/mana-potions/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": null
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/products/ashenfang-longsword-fan-1001/",
+    "heading": "Ashenfang Longsword",
+    "first_paragraph": "A balanced battlefield blade with a smoldering fuller and leather-wrapped grip suited to mounted charges and evening duels.Forged for Emberfall wardens who guarded the high bridges at the edge of the ash plains.",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/longswords/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": [
+      "https://learnwebscraping.dev/images/catalog/longswords.svg"
+    ]
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/products/bastion-pike-chestplate-fan-1201/",
+    "heading": "Bastion Pike Chestplate",
+    "first_paragraph": "A practical heavy chestplate with reinforced ribs and broad pauldron hooks built for long marches and shieldwall duty.Stamped with the old pike sigil of border militias that held the line through long autumn rains.",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/chestplates/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": [
+      "https://learnwebscraping.dev/images/catalog/chestplates.svg"
+    ]
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/products/dreadmarsh-graveguard-harness-fan-1204/",
+    "heading": "Dreadmarsh Graveguard Harness",
+    "first_paragraph": "A dark harness of layered plates and chain that exhales a hint of cold bog air when struck.Recovered from a burial mire where pale reeds swayed over still black water.",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/chestplates/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": [
+      "https://learnwebscraping.dev/images/catalog/chestplates.svg"
+    ]
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/products/garrison-oathblade-fan-1004/",
+    "heading": "Garrison Oathblade",
+    "first_paragraph": "A straightforward service blade with excellent balance, easy upkeep, and a broad guard suited to daily patrol work.Issued to city watch captains in the western marches and polished at the close of every shift.",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/longswords/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": [
+      "https://learnwebscraping.dev/images/catalog/longswords.svg"
+    ]
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/products/kingshade-bastard-sword-fan-1002/",
+    "heading": "Kingshade Bastard Sword",
+    "first_paragraph": "A hand-and-a-half sword with a blackened blade and silver runes, prized for its reach, weight, and graceful finishing cuts.Rumored to have hung above the throne of a vanished king in the north.",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/longswords/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": [
+      "https://learnwebscraping.dev/images/catalog/longswords.svg"
+    ]
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/products/lionwake-tournament-cuirass-fan-1202/",
+    "heading": "Lionwake Tournament Cuirass",
+    "first_paragraph": "A gleaming tournament cuirass with elegant fluting and hidden buckles that remains dependable in live combat.Worn by lancers in summer tourneys where banners snapped above the lists.",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/chestplates/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": [
+      "https://learnwebscraping.dev/images/catalog/chestplates.svg"
+    ]
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/products/mistglass-infiltrator-wrap-fan-1306/",
+    "heading": "Mistglass Infiltrator Wrap",
+    "first_paragraph": "A translucent wrap-cloak with a strange sheen, ideal for rooftop routes and quick disappearances.Cut to disappear against city rain and lamp haze.",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/cloaks/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": [
+      "https://learnwebscraping.dev/images/catalog/cloaks.svg"
+    ]
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/products/moonlit-tournament-blade-fan-1003/",
+    "heading": "Moonlit Tournament Blade",
+    "first_paragraph": "A polished blade that moves easily from the tournament lists to moonlit monster contracts.Commonly carried by hedge champions on bright riverland tournament days.",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/longswords/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": [
+      "https://learnwebscraping.dev/images/catalog/longswords.svg"
+    ]
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/products/stonewarden-bulwark-plate-fan-1203/",
+    "heading": "Stonewarden Bulwark Plate",
+    "first_paragraph": "A dense chestplate etched with defensive sigils, built to turn crushing blows into manageable impacts.Blessed in mountain shrines before every siege season beneath prayer flags and cedar smoke.",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/chestplates/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": [
+      "https://learnwebscraping.dev/images/catalog/chestplates.svg"
+    ]
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/products/sunset-falcon-travel-cloak-fan-1305/",
+    "heading": "Sunset Falcon Travel Cloak",
+    "first_paragraph": "A durable travel cloak with weatherproof shoulders that sits comfortably over bedrolls and quivers.Named for the orange road banners of the southern courier guild.",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/cloaks/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": [
+      "https://learnwebscraping.dev/images/catalog/cloaks.svg"
+    ]
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/products/sunvault-defender-plate-fan-1205/",
+    "heading": "Sunvault Defender Plate",
+    "first_paragraph": "A ceremonial breastplate with gold-lined channels that refract divine light into a halo at dawn.Carried out of a sealed sun-vault after a century without daylight.",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/chestplates/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": [
+      "https://learnwebscraping.dev/images/catalog/chestplates.svg"
+    ]
+  },
+  {
+    "url": "https://learnwebscraping.dev/practice/ecommerce/products/verdant-duelist-saber-fan-1005/",
+    "heading": "Verdant Duelist Saber",
+    "first_paragraph": "A slim saber-longsword hybrid with a lively tip and vine-work guard built for quick woodland skirmishes.Favored by forest wardens who move lightly through fern paths and cedar mist.",
+    "outgoing_links": [
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/",
+      "https://learnwebscraping.dev/practice/ecommerce/categories/longswords/",
+      "https://www.boot.dev"
+    ],
+    "image_urls": [
+      "https://learnwebscraping.dev/images/catalog/longswords.svg"
+    ]
+  }
+]

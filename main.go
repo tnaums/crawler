@@ -77,4 +77,6 @@ func main() {
 	for k, _ := range crawlConfig.pages {
 		fmt.Printf("found: %s\n", k)
 	}
+
+	writeJSONReport(crawlConfig.pages, "report.json")
 }
