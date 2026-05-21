@@ -1,12 +1,18 @@
 package main
 
 import (
-	"fmt"
+	//"fmt"
 	"net/url"
 )
 
 // func crawlPage(rawBaseURL, rawCurrentURL string, pages map[string]int)
 func (cfg *config) crawlPage(rawCurrentURL string) {
+	cfg.concurrencyControl <- struct{}{}
+	defer func() {
+		<-cfg.concurrencyControl
+		cfg.wg.Done()
+	}()	
+
 	parsedCurrentURL, err := url.Parse(rawCurrentURL)
 	if err != nil {
 		return
@@ -23,7 +29,7 @@ func (cfg *config) crawlPage(rawCurrentURL string) {
 
 	isFirst := cfg.addPageVisit(normalized)
 
-	if isFirst == false {
+	if ! isFirst {
 		return
 	}
 
@@ -31,27 +37,37 @@ func (cfg *config) crawlPage(rawCurrentURL string) {
 	if err != nil {
 		return
 	}
-	fmt.Println(pageHTML)
+	//	fmt.Println(pageHTML)
 
-	allURLs, err := getURLsFromHTML(pageHTML, cfg.baseURL)
-	if err != nil {
-		return
-	}
-	fmt.Println("Looping...")
-	for _, u := range allURLs {
-		fmt.Println(u)
-		cfg.crawlPage(u)
+	// Extract all the data we care about and store it
+	pageData := extractPageData(pageHTML, rawCurrentURL)
+	cfg.setPageData(normalized, pageData)
+	
+
+	for _, u := range pageData.OutgoingLinks {
+		//		fmt.Println(u)
+		cfg.wg.Add(1)
+		go cfg.crawlPage(u)
 	}
 
 }
 
 func (cfg *config) addPageVisit(normalizedURL string) (isFirst bool) {
+	cfg.mu.Lock()
+	defer cfg.mu.Unlock()
+	
 	_, ok := cfg.pages[normalizedURL]
 	if ok {
-		cfg.pages[normalizedURL]++
 		return false
 	}
-	cfg.pages[normalizedURL] = 1
 
+	cfg.pages[normalizedURL] = PageData{URL: normalizedURL}
 	return true
+}
+
+// setPageData safely stores the final PageData for a URL.
+func (cfg *config) setPageData(normalizedURL string, data PageData) {
+	cfg.mu.Lock()
+	defer cfg.mu.Unlock()
+	cfg.pages[normalizedURL] = data
 }

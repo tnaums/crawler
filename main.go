@@ -10,7 +10,7 @@ import (
 //var pages = make(map[string]int)
 
 type config struct {
-	pages              map[string]int
+	pages              map[string]PageData
 	baseURL            *url.URL
 	mu                 *sync.Mutex
 	concurrencyControl chan struct{}
@@ -18,7 +18,7 @@ type config struct {
 }
 
 func NewConfig(baseURL string) config {
-	pages := make(map[string]int)
+	pages := make(map[string]PageData)
 
 	parsedBaseURL, err := url.Parse(baseURL)
 	if err != nil {
@@ -32,7 +32,7 @@ func NewConfig(baseURL string) config {
 		pages:              pages,
 		baseURL:            parsedBaseURL,
 		mu:                 &mutex,
-		concurrencyControl: make(chan struct{}),
+		concurrencyControl: make(chan struct{}, 5),
 		wg:                 &sync,
 	}
 }
@@ -53,10 +53,17 @@ func main() {
 
 	fmt.Printf("starting crawl of: %s\n", baseURL)
 
-	crawlConfig.crawlPage(baseURL)
+	crawlConfig.wg.Add(1)
+	go crawlConfig.crawlPage(baseURL)
 
 	fmt.Println("Done. Printing map:")
 	for k, v := range crawlConfig.pages {
 		fmt.Printf("key: %s, value: %d\n", k, v)
+	}
+
+	crawlConfig.wg.Wait()
+
+	for k, _ := range crawlConfig.pages {
+		fmt.Printf("found: %s\n", k)
 	}
 }

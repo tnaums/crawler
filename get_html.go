@@ -37,7 +37,7 @@ func getHTML(rawURL string) (string, error) {
 	defer resp.Body.Close()
 
 	// Check the response status code
-	fmt.Println("Response Status Code:", resp.StatusCode)
+	//fmt.Println("Response Status Code:", resp.StatusCode)
 	if resp.StatusCode >= 400 {
 		return "", fmt.Errorf("response status code %d", resp.StatusCode)
 	}
